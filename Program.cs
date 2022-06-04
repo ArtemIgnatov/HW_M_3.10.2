@@ -15,21 +15,15 @@ namespace HW_M_3._10._2
                 string card = Console.ReadLine();
                     switch (card)
                     {
-                        case "J":
-                            sum += 10;
-                            break;
-                        case "Q":
-                            sum += 10;
-                            break;
-                        case "K":
-                            sum += 10;
-                            break;
-                        case "T":
-                            sum += 10;
-                            break;
-                        default:
-                            sum += int.Parse(card);
-                            break;
+                    case "J":
+                    case "Q":
+                    case "K":
+                    case "T":
+                        sum += 10;
+                        break;
+                    default:
+                        sum += int.Parse(card);
+                        break;
                     }
                 }
             Console.WriteLine($"Сумма Ваших карт равна: {sum}");
